@@ -28,7 +28,7 @@ jobs:
             script: |
               sudo -u root bash -c '
               cd /usr/homework/vue-shop
-              git pull dev'
+              git pull origin dev'
     
       - name: Cleanup
         run: rm -f deploy_key.pem
