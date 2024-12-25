@@ -32,5 +32,5 @@ jobs:
               npm install
               npm run dev'
     
-      - name: Cleanup
-        run: rm -f deploy_key.pem
+      # - name: Cleanup
+      #   run: rm -f deploy_key.pem
