@@ -26,8 +26,8 @@ jobs:
             key_path: deploy_key.pem
             script_stop: true
             script: |
-              sudo -u www bash -c '
-              cd /www/test-project
+              sudo -u root bash -c '
+              cd /usr/homework/vue-shop
               git pull origin dev'
     
       - name: Cleanup
