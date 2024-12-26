@@ -31,9 +31,10 @@ jobs:
               git pull origin dev
               npm install
               npm run build
-              node server.js &
+              # node server.js &
+              nohup node server.js > /dev/null 2>&1 &
               echo "Server started in background"
               exit 0'
     
-      # - name: Cleanup
-      #   run: rm -f deploy_key.pem
+      - name: Cleanup
+        run: rm -f deploy_key.pem
