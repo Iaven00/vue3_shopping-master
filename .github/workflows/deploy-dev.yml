@@ -30,7 +30,8 @@ jobs:
               cd /usr/homework/vue-shop
               git pull origin dev
               npm install
-              npm run build'
+              npm run build
+              node server.js'
     
       # - name: Cleanup
       #   run: rm -f deploy_key.pem
